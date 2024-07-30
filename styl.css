@@ -9,10 +9,6 @@
     font-family: Poppins;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
 
 .header {
     background-color: #12175f;
@@ -64,13 +60,12 @@ html, body {
     top: 0;
     left: 0; 
     width: 400px;
-    height: 100vh;
+    height: 290%;
     color: #fff;
     transition: left 0.3s ease;
     z-index: 1000;
     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
     background-color: #fff;
-    overflow: visible;
 }
 
 .content__user {
@@ -99,9 +94,7 @@ html, body {
 }
 
 .container__content {
-    display: grid;
-    width: 100%;
-    
+    display: grid;    
 }
 
 .container__submenus {
@@ -346,8 +339,8 @@ button {
 
     .container__menu {
         width: 100vw;
-        height: 100vh;
-        left: -500px; /* Asegúrate de que el menú está fuera de la vista solo si es necesario */
+        max-height: 900px;
+        left: -500px; 
     }
 
     .submenus--modify {
