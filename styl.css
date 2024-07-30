@@ -9,6 +9,11 @@
     font-family: Poppins;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .header {
     background-color: #12175f;
     display: flex;
@@ -54,17 +59,18 @@
 }
 
 
-.container__menu{
+.container__menu {
     position: absolute;
     top: 0;
-    left: -400px;
+    left: 0; 
     width: 400px;
-    height: 105%;
+    height: 100vh;
     color: #fff;
     transition: left 0.3s ease;
     z-index: 1000;
     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
     background-color: #fff;
+    overflow: visible;
 }
 
 .content__user {
@@ -94,6 +100,8 @@
 
 .container__content {
     display: grid;
+    width: 100%;
+    
 }
 
 .container__submenus {
@@ -337,9 +345,9 @@ button {
 
 
     .container__menu {
-        min-width: 100vw;
-        min-height: 100vh;
-        left: -500px;
+        width: 100vw;
+        height: 100vh;
+        left: -500px; /* Asegúrate de que el menú está fuera de la vista solo si es necesario */
     }
 
     .submenus--modify {
